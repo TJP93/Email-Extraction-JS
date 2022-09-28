@@ -30,8 +30,17 @@ function processOneLine(line) {
     }
 }
 
-let regex = /@softwire\.com/gm;
-let found = text.match(regex);
-// console.log(found);
-let myResult = found.length;
-console.log(`There are ${myResult} addresses with that domain.`);
+let corndelRegex = /@corndel\.com/gm;
+let corndelFound = text.match(corndelRegex);
+let corndelResult = corndelFound.length;
+console.log(`There are ${corndelResult} addresses with the Corndel domain.`);
+
+let softwireRegex = /@softwire\.com/gm;
+let softwireFound = text.match(softwireRegex);
+let softwireResult = softwireFound.length;
+console.log(`There are ${softwireResult} addresses with the Softwire domain.`);
+
+let gmailRegex = /@gmail\.com/gm;
+let gmailFound = text.match(gmailRegex);
+let gmailResult = gmailFound.length;
+console.log(`There are ${gmailResult} addresses with the gmail domain.`);
